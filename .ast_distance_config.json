@@ -1,0 +1,22 @@
+{
+  "type": "maintenance",
+  "name": "cell-kotlin",
+  "source": {
+    "path": "tmp/cell/src",
+    "lang": "rust"
+  },
+  "target": {
+    "path": "src/common/commonMain/kotlin/io/github/kotlinmania/cell",
+    "lang": "kotlin"
+  },
+  "checks": {
+    "deep": false,
+    "missing": false,
+    "todos": false,
+    "lint": false
+  },
+  "reexport_modules": [
+    "lib.rs",
+    "fmt/mod.rs"
+  ]
+}
